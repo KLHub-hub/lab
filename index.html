@@ -5,6 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Audiovisual Connect LAB — реєстрація для освітян</title>
 <meta name="description" content="Audiovisual Connect LAB — міжнародна ініціатива для освітян України: кінограмотність, практичні інструменти, спільнота та бібліотека фільмів. Старт влітку–восени 2026, Київ.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<!-- Open Graph / social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Audiovisual Connect LAB — реєстрація для освітян">
+<meta property="og:description" content="Проєкт для освітян із київських шкіл: кінограмотність, практичні інструменти та спільнота. Безплатно. Офлайн, Київ. Старт влітку–восени 2026.">
+<meta property="og:image" content="https://raw.githubusercontent.com/KLHub-hub/lab/claude/focused-archimedes-rNZv6/hero.jpg">
+<meta property="og:image:width" content="924">
+<meta property="og:image:height" content="540">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Audiovisual Connect LAB — реєстрація для освітян">
+<meta name="twitter:description" content="Проєкт для освітян із київських шкіл: кінограмотність, практичні інструменти та спільнота. Безплатно. Офлайн, Київ. Старт влітку–восени 2026.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/KLHub-hub/lab/claude/focused-archimedes-rNZv6/hero.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -163,7 +175,7 @@
 
   /* ---- hero split ---- */
   #hero {
-    padding: 132px 0 5px;
+    padding: 132px 0 52px;
   }
   .hero-split {
     display: grid;
@@ -372,10 +384,10 @@
     background: var(--accent);
     color: var(--accent-ink);
     padding: 44px 40px;
-    aspect-ratio: 1 / 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 360px;
   }
   .eu-ring {
     position: relative;
@@ -532,7 +544,7 @@
   footer {
     background: var(--char);
     color: rgba(255,255,255,.7);
-    padding: 56px 0 40px;
+    padding: 30px 0 28px;
   }
   .footer-inner {
     display: flex;
@@ -540,38 +552,45 @@
     flex-wrap: wrap;
     gap: 28px;
   }
+  .footer-inner { align-items: center; }
+  .footer-col { flex: 1; min-width: 160px; }
+  .footer-col-logo { flex: 1.6; }
   .footer-logo {
     font-weight: 800;
-    font-size: 18px;
+    font-size: 17px;
     color: #fff;
     letter-spacing: -0.02em;
   }
   .footer-logo span { color: var(--accent-ink); }
   .footer-desc {
     margin-top: 10px;
-    font-size: 14.5px;
-    max-width: 420px;
+    font-size: 14px;
+    max-width: 340px;
     line-height: 1.5;
+    color: rgba(255,255,255,.55);
   }
-  .footer-org { margin-top: 22px; font-size: 14.5px; line-height: 1.6; }
-  .footer-org-label {
-    color: rgba(255,255,255,.5);
-    font-size: 12.5px;
-    letter-spacing: 0.14em;
+  .footer-col-label {
+    color: rgba(255,255,255,.45);
+    font-size: 11.5px;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
   }
-  .footer-org a { color: #fff; text-decoration: none; font-weight: 600; }
-  .footer-org-note { opacity: 0.6; }
-  .footer-email {
-    color: var(--accent-ink);
+  .footer-col-main {
+    display: block;
+    color: #fff;
     text-decoration: none;
-    display: inline-block;
-    margin-top: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.4;
   }
-  .footer-right { font-size: 14px; text-align: right; line-height: 1.6; }
-  .footer-right .muted { opacity: 0.6; }
+  .footer-col-main:hover { opacity: .75; }
+  .footer-col-note {
+    margin-top: 4px;
+    font-size: 13.5px;
+    color: rgba(255,255,255,.45);
+  }
 
   /* ---- responsive ---- */
   @media (max-width: 900px) {
@@ -645,7 +664,7 @@
         </div>
       </div>
       <div class="hero-img">
-        <div class="img-placeholder">Кадр із фільму</div>
+        <img src="hero.jpg" alt="Глядачі в кінозалі" style="width:100%;height:100%;object-fit:cover;display:block;">
         <div class="hero-img-caption">
           <svg class="arrow-diag" width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M5 5 L19 19" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/>
@@ -664,7 +683,7 @@
     <div class="label">Для кого цей проєкт</div>
     <p class="qf-headline">
       Шукаємо <span class="accent">освітянок та освітян із київських шкіл</span>, які працюють з підлітками 14–19 років — будь-який предмет, без обов'язкового досвіду роботи з кіно й кіноосвітою.<br>
-      <span class="green">Участь у програмі безплатна.</span>
+      <span style="color:var(--accent)">Участь у програмі безплатна.</span>
     </p>
   </div>
 </section>
@@ -787,7 +806,6 @@
       <div class="eu-ring" id="euRing"></div>
       <div>
         <div class="eu-box-title">Профінансовано Європейським Союзом</div>
-        <div class="eu-box-sub">8 країн · спільні методики · обмін досвідом між освітянами Європи</div>
       </div>
     </div>
   </div>
@@ -842,19 +860,18 @@
 <!-- footer -->
 <footer>
   <div class="wrap footer-inner">
-    <div>
+    <div class="footer-col footer-col-logo">
       <div class="footer-logo">Audiovisual Connect <span>LAB</span></div>
       <div class="footer-desc">Кінограмотність, критичне мислення та нові підходи до навчання для освітян України.</div>
-      <div class="footer-org">
-        <div class="footer-org-label">Організатор</div>
-        <a href="https://cinema.org.ua/uk/about/" target="_blank" rel="noopener noreferrer">ГО «Розвиток кіно та культури»</a>
-        <div class="footer-org-note">Частина KyivMusicFilm</div>
-        <a class="footer-email" href="mailto:info@cinema.org.ua">info@cinema.org.ua</a>
-      </div>
     </div>
-    <div class="footer-right">
-      <div>Профінансовано Європейським Союзом</div>
-      <div class="muted">Київ · старт літо–осінь 2026</div>
+    <div class="footer-col">
+      <div class="footer-col-label">Організатор</div>
+      <a href="https://cinema.org.ua/uk/about/" target="_blank" rel="noopener noreferrer" class="footer-col-main">ГО «Розвиток кіно та культури»</a>
+      <div class="footer-col-note">Частина KyivMusicFilm</div>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-label">Контакт</div>
+      <a href="mailto:info@cinema.org.ua" class="footer-col-main">info@cinema.org.ua</a>
     </div>
   </div>
 </footer>
@@ -903,7 +920,7 @@
     { q: 'Скільки це коштує?', a: 'Участь повністю безплатно — проєкт реалізується за підтримки Європейського Союзу.' },
     { q: 'Хто може взяти участь?', a: 'Вчителі та вчительки з київських шкіл, які працюють з підлітками 14–19 років. Предмет не має значення — важливий інтерес до роботи з кіно.' },
     { q: 'Чи потрібен досвід роботи з кіно?', a: 'Ні. Ми навчимося всього необхідного разом із фахівцями та фахівчинями кіно та кіноосвіти.' },
-    { q: 'Яка ваша експертиза?', a: 'Проєкт реалізує ГО «Розвиток кіно та культури» (команда KyivMusicFilm) разом із фахівцями та фахівчинями кіно й кіноосвіти з 8 європейських країн. За плечима команди — фестивалі, освітні програми та робота з кіно для молоді.' },
+    { q: 'Хто є організаторами цього проєкту?', a: 'Проєкт реалізує ГО «Розвиток кіно та культури» (команда KyivMusicFilm) разом із фахівцями та фахівчинями кіно й кіноосвіти з 8 європейських країн. За плечима команди — фестивалі, освітні програми та робота з кіно для молоді.' },
     { q: 'Коли це почнеться?', a: 'Орієнтовно влітку–восени 2026 року. Зараз ми збираємо контакти зацікавлених і повідомимо точні дати ближче до старту.' },
     { q: 'Це онлайн чи офлайн?', a: 'Офлайн — живі зустрічі в Києві.' },
     { q: 'Скільки часу це забере?', a: 'Чотири інтенсиви по 6–8 годин упродовж проєкту.' },
