@@ -245,6 +245,15 @@
     color: rgba(234,240,236,.4);
   }
 
+  /* ---- hero deadline ---- */
+  .hero-deadline {
+    margin: 16px 0 0;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--ink-3);
+  }
+
   /* ---- quickfacts ---- */
   #quickfacts {
     border-top: 1px solid var(--line);
@@ -303,6 +312,21 @@
     letter-spacing: -0.025em;
     line-height: 1.2;
     max-width: 720px;
+  }
+
+  /* ---- not-kyiv ---- */
+  #not-kyiv {
+    background: var(--accent);
+    padding: 40px 0;
+  }
+  .not-kyiv-text {
+    font-size: clamp(22px, 2.6vw, 32px);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+    color: var(--accent-ink);
+    max-width: 900px;
+    margin: 0;
   }
 
   /* ---- format ---- */
@@ -694,13 +718,13 @@
   <div class="wrap">
     <div class="hero-split">
       <div>
-        <div class="label">Збираємо групу · Київ · дедлайн реєстрації: 30 липня 2026</div>
+        <div class="label">Збираємо групу · Київ · старт влітку–восени 2026</div>
         <h1 class="hero-h1">
           <span>Нові способи</span>
           <span>говорити з молоддю —</span>
           <span>мовою кіно</span>
         </h1>
-        <p class="hero-sub">Audiovisual Connect LAB — це програма для освітян, які хочуть працювати з кіно і не починати з нуля: готові методики, фільми українською і люди, з якими є що обговорити.</p>
+        <p class="hero-sub">Audiovisual Connect LAB — це програма для освітян, які хочуть працювати з кіно і не починати з нуля: готові методики, фільми українською і люди, з якими є що обговорити. Участь у програмі безплатна.</p>
         <div class="hero-btns">
           <a class="btn btn-solid" href="https://docs.google.com/forms/d/e/1FAIpQLSfF7aeWcZl3bCdPWwMOp11fA_f6YBmeISo7e5r1tsKhQB-ycw/viewform" target="_blank" rel="noopener noreferrer">
             Заповнити форму
@@ -711,6 +735,7 @@
           </a>
           <a class="btn btn-ghost" href="#benefits">Що це дає</a>
         </div>
+        <p class="hero-deadline">Дедлайн реєстрації: 30 липня 2026</p>
       </div>
       <div class="hero-img">
         <img src="hero.jpg" alt="Глядачі в кінозалі" style="width:100%;height:100%;object-fit:cover;display:block;">
@@ -740,8 +765,13 @@
       <li>студентки та студенти педагогічних спеціальностей, яким цікава практика викладання кіно.</li>
     </ul>
     <p class="qf-free">Досвід роботи з кіно не обов'язковий, головне — це інтерес до теми!</p>
-    <p class="qf-free" style="color:var(--ink)">Участь у програмі безплатна.</p>
-    <p class="qf-note">Якщо ви не з Києва — напишіть нам у формі: ми розглянемо можливість підтримати ваш приїзд або участь онлайн.</p>
+  </div>
+</section>
+
+<!-- not-kyiv -->
+<section id="not-kyiv">
+  <div class="wrap">
+    <p class="not-kyiv-text">Якщо ви не з Києва — напишіть нам у формі: ми розглянемо можливість підтримати ваш приїзд або участь онлайн.</p>
   </div>
 </section>
 
